@@ -21,16 +21,16 @@ I have kept this demo simple by creating 3-tier in single availibility zone for 
 
 **We have created 3-tier environment in AWS using terraform with below details :**
 
-VPC -1
-Public Subnet  - 1 -  web-subnet
-Private Subnet - 1 - app-subnet
-Private subnet - 1 -  DB-subnet
-Intenet gateway for public subnet and route table - 1
-NAT gateway for private subnet & route table & EIP - 1
-web-server - 1
-app-server - 1
-RDS instance (mysql) - 1
-security group - 3 
+1) VPC -1
+2) Public Subnet  - 1 -  web-subnet
+3) Private Subnet - 1 - app-subnet
+4) Private subnet - 1 -  DB-subnet
+5) Intenet gateway for public subnet and route table - 1
+6) NAT gateway for private subnet & route table & EIP - 1
+7) web-server - 1
+8) app-server - 1
+9) RDS instance (mysql) - 1
+10) security group - 3 
 
 **Terraform tf configuration file details :**
 
@@ -67,13 +67,13 @@ I have used terraform output to get the instace metadata. We can then use jq alo
 
 **Example-**
 
-# output has been defined as web_server_metadata to get the metadata of an instance
+1) output has been defined as web_server_metadata to get the metadata of an instance
     terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.'
 
-# to retrieve ami id from the instance metadata 
+2) to retrieve ami id from the instance metadata 
 terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.ami'
 
-# to retrieve arn from the instnace metadata
+3)  to retrieve arn from the instnace metadata
 terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.arn'
 
 
