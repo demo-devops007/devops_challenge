@@ -1,10 +1,10 @@
 # devops_challenge
 This repository contain solution for three challenges related to 3-tier architecture and json parsing
 
-**.gitignore file -** \
-*/.terraform/*
-*.tfstate
-*.tfstate.*
+**.gitignore file -**   
+*/.terraform/*  
+*.tfstate  
+*.tfstate.*  
 
 
 **Challenge #1**
