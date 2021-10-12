@@ -1,10 +1,10 @@
 # devops_challenge
 This repository contain solution for three challenges related to 3-tier architecture and json parsing
 
-**.gitignore file -** 
-*/.terraform/*
-*.tfstate
-*.tfstate.*
+**.gitignore file -** \
+*/.terraform/*\
+*.tfstate\
+*.tfstate.*\
 
 
 **Challenge #1**
@@ -13,7 +13,7 @@ A 3-tier environment is a common setup. Use a tool of your choosing/familiarity 
 
 **Solution : **
 
-**Solution folder - ch-1**
+Solution folder - ch-1
 
 I am using terraform to create this 3-tier enviroment on AWS. I am not commiting my tfstate file in github due to security reason. Since this is just a demo thus I am also not saving my tfstate file in remote backend as I am the only one for now doing the changes and maintaining this. Else, we can create remote backend in s3 bucket and use state locking feature using dynamodb.
 
