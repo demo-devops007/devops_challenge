@@ -4,6 +4,9 @@ This repository contain solution for three challenges related to 3-tier architec
 **.gitignore file -**   
 ignoring .terraform folder and .tfstate files 
 
+Tools used for this challenge:  
+Terraform - One of the most popular Infra-as-code tool independent of any cloud provider  
+jq - lightweight and flexible command-line JSON processor  
 
 **Challenge #1**
 
