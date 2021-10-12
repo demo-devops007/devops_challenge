@@ -1,0 +1,8 @@
+# output has been defined as web_server_metadata to get the metadata of an instance
+terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.'
+
+# to retrieve ami id from the instance metadata 
+terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.ami'
+
+# to retrieve arn from the instnace metadata
+terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.arn'
