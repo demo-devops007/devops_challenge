@@ -2,9 +2,9 @@
 This repository contain solution for three challenges related to 3-tier architecture and json parsing
 
 **.gitignore file -** \
-*/.terraform/*\
-*.tfstate\
-*.tfstate.*\
+*/.terraform/*
+*.tfstate
+*.tfstate.*
 
 
 **Challenge #1**
@@ -56,7 +56,7 @@ We can then take the public IP of ouw webserver and check that our web server is
 **Challenge #2**
 
 We need to write code that will query the meta data of an instance within AWS and provide a json formatted output. The choice of language and implementation is up to you.
-Bonus Points
+Bonus Points\
 The code allows for a particular data key to be retrieved individually
 
 **Solution : **
@@ -79,20 +79,20 @@ terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe 
 
 **Challenge #3**
 
-We have a nested object, we would like a function that you pass in the object and a key and get back the value. How this is implemented is up to you.
-Example Inputs
-object = {“a”:{“b”:{“c”:”d”}}}
-key = a/b/c
-object = {“x”:{“y”:{“z”:”a”}}}
-key = x/y/z
-value = a
+We have a nested object, we would like a function that you pass in the object and a key and get back the value. How this is implemented is up to you.\
+Example Inputs\
+object = {“a”:{“b”:{“c”:”d”}}}  
+key = a/b/c  
+object = {“x”:{“y”:{“z”:”a”}}}  
+key = x/y/z  
+value = a  
 
 **Solution : **
 
 **Solution folder - ch-3**
 
 I have created a function in unix and passing object and key as separate file to get the value back as expected in the example above.
-script name -  nested_object.sh
-json object file example - f1.json & f2.json
-example file containing key - key1.txt & key2.txt 
+script name -  nested_object.sh  
+json object file example - f1.json & f2.json  
+example file containing key - key1.txt & key2.txt   
 
