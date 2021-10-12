@@ -59,9 +59,9 @@ We need to write code that will query the meta data of an instance within AWS an
 Bonus Points\
 The code allows for a particular data key to be retrieved individually
 
-**Solution : **
+**solution : **
 
-**Solution folder - ch-2**
+Solution folder - ch-2
 
 I have used terraform output to get the instace metadata. We can then use jq along with it to get any particular key and its value. kq is a light weight JSON processor tool.
 
@@ -87,9 +87,9 @@ object = {“x”:{“y”:{“z”:”a”}}}
 key = x/y/z  
 value = a  
 
-**Solution : **
+**Solution :**
 
-**Solution folder - ch-3**
+Solution folder - ch-3
 
 I have created a function in unix and passing object and key as separate file to get the value back as expected in the example above.
 script name -  nested_object.sh  
