@@ -96,7 +96,7 @@ value = a
 
 Solution folder - ch-3
 
-I have created a function in unix and passing object and key as separate file to get the value back as expected in the example above.
+I have created a function in unix and passing object and key as separate file to get the value back as expected in the example above.  
 script name -  nested_object.sh  
 json object file example - f1.json & f2.json  
 example file containing key - key1.txt & key2.txt   
