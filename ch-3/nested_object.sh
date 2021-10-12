@@ -9,7 +9,7 @@ get-key () {
    key2=`cat $k | cut -d "/" -f2`
    key3=`cat $k | cut -d "/" -f3`
    #k=`echo "$k" | sed  's/\//./g'`
-   value=`cat $file | /c/Users/Himanshu/Downloads/jq.exe -r --arg k1 "$key1" --arg k2 "$key2" --arg k3 "$key3" '.[$k1][$k2][$k3]'`
+   value=`cat $file | jq -r --arg k1 "$key1" --arg k2 "$key2" --arg k3 "$key3" '.[$k1][$k2][$k3]'`
    echo "Value for requested key is : $value"
 }
 
