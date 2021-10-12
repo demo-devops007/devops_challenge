@@ -67,13 +67,13 @@ I have used terraform output to get the instace metadata. We can then use jq alo
 
 **Example-**
 
-1) output has been defined as web_server_metadata to get the metadata of an instance
+1) output has been defined as web_server_metadata to get the metadata of an instance\
     terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.'
 
-2) to retrieve ami id from the instance metadata 
+2) to retrieve ami id from the instance metadata\
 terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.ami'
 
-3)  to retrieve arn from the instnace metadata
+3)  to retrieve arn from the instnace metadata\
 terraform output -json web_server_metadata | /c/Users/Himanshu/Downloads/jq.exe -r '.arn'
 
 
