@@ -2,9 +2,7 @@
 This repository contain solution for three challenges related to 3-tier architecture and json parsing
 
 **.gitignore file -**   
-*/.terraform/*  
-*.tfstate  
-*.tfstate.*  
+ignoring .terraform folder and .tfstate files 
 
 
 **Challenge #1**
