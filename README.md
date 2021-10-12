@@ -49,7 +49,7 @@ I have kept this demo simple by creating 3-tier in single availibility zone for 
 6) db_instance.tf - creating a mysql database instance 
 7) security_group.tf - creating security group for all three tiers to allow traffic from internet to web server, allowing inbound traffic to app server from web server only and finally allowing inbound traffic to db server only from app server.
 
-use terraform commands as below -
+**use terraform commands as below -**  
 terraform init - to initialize provider plugin, modules and remote backend  
 terraform plan - to get the plan of all the resource which is going to be created by above tf configuration files  
 terraform apply -auto-approve - this will execute the creation of all the resources in the AWS with auto approve.  
